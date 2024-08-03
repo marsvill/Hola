@@ -1,0 +1,3 @@
+const PreventDuplicateScript_167=0;async function AreFriendedDispatcher(){let t;for(;t=document.querySelector('[ng-controller="profileBaseController"]'),!t;)await new Promise(e=>setTimeout(e,0));for(;;){let e=!1;try{angular&&(e=!0)}catch{}if(e)break;await new Promise(r=>setTimeout(r,0))}const o=angular.element(t);for(;!o.scope();)await new Promise(e=>setTimeout(e,100));const n=o.scope(),a=n.profileHeaderLayout;function i(){document.dispatchEvent(new CustomEvent("RobloxQoL.areFriended",{detail:a.areFriends}))}n.profileHeaderLayout=new Proxy(a,{set:function(e,r,l){return e[r]=l,r==="areFriends"&&i(),!0}}),i()}AreFriendedDispatcher();
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/generalfixes/scriptinjections/AreFriendedProfile.js

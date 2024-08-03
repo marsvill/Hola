@@ -1,0 +1,3 @@
+const PreventDuplicateScript_257=0;const LimitedInventoryCache={};async function GetUserLimitedInventory(e){let t=[],n="";if(LimitedInventoryCache[e])return[!0,LimitedInventoryCache[e]];if(LimitedInventoryCache[e]===!1)return[!0,!1];for(;n!==null;){const[r,s,u]=await RequestFunc(`https://inventory.roblox.com/v1/users/${e}/assets/collectibles?cursor=${n}&limit=100`,"GET",void 0,void 0,!0);if(!r){if(u.status===429){await sleep(2e3);continue}else if(u.status===403)return LimitedInventoryCache[e]=!1,[!0,!1];return[!1,!1,t]}n=s.nextPageCursor,t=t.concat(s.data)}return LimitedInventoryCache[e]=t,[!0,!0,t]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/trades/getuserinventory.js

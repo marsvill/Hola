@@ -1,0 +1,3 @@
+const PreventDuplicateScript_168=0;document.addEventListener("RedrawThumbnail",function(){angular.element(document.getElementById("UserAvatar")).scope().redrawThumbnail()}),document.addEventListener("RefreshThumbnail",function(){angular.element(document.getElementById("UserAvatar")).scope().refreshThumbnail(),angular.element(document.getElementById("UserAvatar")).scope().$apply()});
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/generalfixes/scriptinjections/AvatarPage.js

@@ -1,0 +1,3 @@
+const PreventDuplicateScript_186=0;async function FixAvatarTabsForFirefoxAndroid(){let o;for(;o=document.querySelector('[ng-controller="avatarController"]'),!o;)await new Promise(n=>setTimeout(n,100));const e=angular.element(o).scope(),t=e.onTabBlur;e.onTabBlur=async function(...n){if(!e.isMenuOpen)return t(...n);setTimeout(function(){t(...n),e.$apply()},100)}}setTimeout(FixAvatarTabsForFirefoxAndroid,0);
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/generalfixes/scriptinjections/firefoxandroidavatartabs.js

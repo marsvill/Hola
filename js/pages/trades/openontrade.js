@@ -1,0 +1,3 @@
+const PreventDuplicateScript_261=0;async function LookForTrade(){const t=new URL(window.location).searchParams.get("tradeid");if(!t)return;const r=Date.now()+5*1e3;let e;for(;r>Date.now()&&!e;)e=document.querySelectorAll(`div[tradeid="${t}"][class^="trade-row"]`)[0],await sleep(20);if(!e)return;const a=e.getElementsByClassName("trade-row-container click-detection")[0];a&&a.click()}LookForTrade();
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/trades/openontrade.js

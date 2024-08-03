@@ -1,0 +1,3 @@
+const PreventDuplicateScript_205=0;IsFeatureEnabled("Mutuals2").then(async function(i){if(!i||await GetUserId()==GetTargetId())return;const n=await WaitForQuerySelector(".profile-header:not(.hidden)"),e=await WaitForClassPath(n,"details-info"),a=GetTargetId(),[s,t]=CreateMututalHeader(a);t.title="...",t.innerText="...",e.insertBefore(s,e.firstChild);const[o,r]=await GetMutualFriendsCount(a);if(!o){t.title="ERR",t.innerText="ERR";return}t.title=r,t.innerText=r});
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/mutuals/profilepage.js

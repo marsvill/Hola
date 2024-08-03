@@ -1,0 +1,3 @@
+const PreventDuplicateScript_176=0;function TooltipDiscord(){const t=document.getElementsByClassName("discord-social-button");t.length>0&&(new MutationObserver(function(n){n.forEach(function(e){if(e.type==="attributes"&&e.attributeName=="data-original-title"){const i=t[0].parentElement.getElementsByClassName("tooltip-inner")[0];i&&(i.innerText=t[0].getAttribute("data-original-title"))}})}).observe(t[0],{attributes:!0}),$(t[0]).tooltip())}TooltipDiscord();
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/generalfixes/scriptinjections/TooltipDiscord.js

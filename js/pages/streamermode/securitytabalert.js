@@ -1,0 +1,3 @@
+const PreventDuplicateScript_247=0;async function CreateSecurityTabMessageAlertWhenStreamerModeEnabled(){ChildAdded(await WaitForClass("tab-content"),!0,function(t){if(!document.getElementById("security-tab")||document.getElementById("security-tab-hidden-streamermode-alert"))return;const e=document.createElement("p");e.id="security-tab-hidden-streamermode-alert",e.innerText="You have streamer mode enabled along with hiding sensitive information. To access this page, please turn one of those settings off.",t.appendChild(e)})}setTimeout(CreateSecurityTabMessageAlertWhenStreamerModeEnabled,0);
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/streamermode/securitytabalert.js

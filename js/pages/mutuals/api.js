@@ -1,0 +1,3 @@
+const PreventDuplicateScript_202=0;async function GetMutualFriends(n){const t=await chrome.runtime.sendMessage({type:"GetCachedFriends"}),[s,c]=await RequestFunc(`https://friends.roblox.com/v1/users/${n}/friends`);if(!s)return[!1];const r={},u=c.data,a=[];for(let e=0;e<t.length;e++)r[t[e]]=!0;for(let e=0;e<u.length;e++){const i=u[e];r[i.id]&&a.push(i)}return[!0,a]}async function GetMutualFriendsCount(n){const[t,s]=await GetMutualFriends(n);return t?[!0,s.length]:[!1]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/mutuals/api.js

@@ -1,0 +1,3 @@
+const PreventDuplicateScript_157=0;IsFeatureEnabled("ShowFullVoteCount").then(async function(s){if(!s||await IsFeatureEnabled("LiveExperienceStats"))return;const e=(await WaitForClass("vote-details")).getElementsByClassName("vote-numbers")[0],a=e.getElementsByClassName("count-right")[0].getElementsByClassName("vote-text")[0],n=e.getElementsByClassName("count-left")[0].getElementsByClassName("vote-text")[0],[i,t]=await GetLikesFromCurrentPlace();i&&(n.innerText=numberWithCommas(t.Likes),a.innerText=numberWithCommas(t.Dislikes))});
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/generalfixes/fullvotecount.js

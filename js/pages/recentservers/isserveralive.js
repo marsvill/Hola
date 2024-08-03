@@ -1,0 +1,3 @@
+const PreventDuplicateScript_227=0;async function IsRobloxServerAlive(t,s){const[n,e]=await RequestFunc("https://gamejoin.roblox.com/v1/join-game-instance","POST",{"Content-Type":"application/json","User-Agent":"Roblox/WinInet",Referer:`https://www.roblox.com/games/${t}/`,Origin:"https://www.roblox.com"},JSON.stringify({placeId:t,gameId:s}),!0);return n?e.status===6||e.status===12||e.status===11?[!0,!1]:e.Status===2?[!0,!0]:[!1,!1]:[!1,!1]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/recentservers/isserveralive.js

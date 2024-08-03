@@ -1,0 +1,3 @@
+const PreventDuplicateScript_158=0;async function GetUniversesBatchToLiveCallback(s,a){const n=SplitArrayIntoChunks(s,10);for(;n.length>0;){const[i,e]=await RequestFunc(`https://games.roblox.com/v1/games?universeIds=${n.shift().join(",")}`,"GET",void 0,void 0,!0);if(!(!i||!e?.data))for(let t=0;t<e.data.length;t++)a(e.data[t])}}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/generalfixes/getuniversesbatchlive.js

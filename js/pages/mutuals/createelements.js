@@ -1,0 +1,3 @@
+const PreventDuplicateScript_203=0;function CreateMututalHeader(s){const t=document.createElement("li"),n=document.createElement("div");n.className="text-label font-caption-header ng-binding",n.innerText="Mutuals";const e=document.createElement("a");e.className="text-name",e.href=`https://www.roblox.com/users/${s}/friends#!/friends?tab=mutuals`;const a=document.createElement("span");return a.className="font-header-2 ng-binding",t.appendChild(n),e.appendChild(a),t.appendChild(e),[t,a]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/mutuals/createelements.js

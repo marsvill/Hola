@@ -1,0 +1,3 @@
+const PreventDuplicateScript_230=0;function CreateTopHeader(c,d,i){const t=document.createElement("li"),a=document.createElement("div");a.className="text-label font-caption-header ng-binding",a.innerText=c;const e=document.createElement("a");e.className="text-name",e.href=i;const n=document.createElement("span");return n.className="font-header-2 ng-binding",n.innerText=d,t.appendChild(a),e.appendChild(n),t.appendChild(e),[t,n]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/rolimonsprofile/createelements.js

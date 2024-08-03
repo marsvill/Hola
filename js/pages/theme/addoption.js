@@ -1,0 +1,3 @@
+const PreventDuplicateScript_249=0;async function AddSystemThemeOption(){const n=await WaitForId("themes-list"),t=await WaitForClassPath(n,"input-field"),e=document.createElement("option");if(e.label="System",e.value="string:System",e.innerText="System",t.appendChild(e),document.addEventListener("RobloxQoLThemeChange",function(i){SetFeatureEnabled("SetThemeToSystem2",i.detail==="System")}),IsFeatureEnabled("SetThemeToSystem2")){for(;t.value==="?";)await sleep(0);t.value="string:System"}InjectScript("intercepttheme")}setTimeout(AddSystemThemeOption,0);
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/theme/addoption.js
