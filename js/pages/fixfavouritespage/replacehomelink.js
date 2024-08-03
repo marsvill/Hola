@@ -1,0 +1,3 @@
+const PreventDuplicateScript_146=0;IsFeatureEnabled("FixFavouritesPage").then(async function(e){e&&setTimeout(async function(){let a=await WaitForClass("game-home-page-container");await IsFeatureEnabled("TemporaryHomePageContainerFix")&&(a=(await WaitForClassPath(a,"game-carousel")).parentNode);const[t]=await SearchForRow(a,100000001),o=await WaitForClassPath(t,"see-all-link-icon");o.href="https://www.roblox.com/charts#/sortName?sort=Favorites"},0)});
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/fixfavouritespage/replacehomelink.js

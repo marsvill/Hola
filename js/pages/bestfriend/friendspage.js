@@ -1,0 +1,3 @@
+const PreventDuplicateScript_113=0;IsFeatureEnabled("BestFriends").then(async function(i){if(!i)return;const[a,r]=await RequestFunc(WebServerEndpoints.BestFriendsV2+"all","GET"),e=r?.Friends;!a||e.length===0||ChildAdded(await WaitForClass("tab-content"),!0,async function(c){const n=await WaitForClassPath(c,"hlist");n&&ChildAdded(n,!0,function(s){if(!e.includes(parseInt(s.id)))return;const t=document.createElement("img");t.src=chrome.runtime.getURL("img/star.svg"),t.style="width: 20x; height: 20px; position: absolute; top: 6px; right: 6px;",s.getElementsByClassName("avatar-card-container")[0].appendChild(t)})})});
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/bestfriend/friendspage.js

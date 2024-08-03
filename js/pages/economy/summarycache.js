@@ -1,0 +1,3 @@
+const PreventDuplicateScript_133=0;const FetchedCaches={},SummaryCacheDisabled=!0;function FetchCache(r,t,a){}function TrimCache(r,t,a){}function SortCache(r,t,a){}function AddToCache(r,t,a,e){}function SaveCache(r,t,a){}function KillAllCaches(){const r=["users","groups"],t=[1,7,30,365],a=["GroupPayout","EngagementPayout","Sale","AffiliateSale"];for(let e=0;e<r.length;e++){const i=r[e];for(let n=0;n<t.length;n++){const c=t[n];for(let o=0;o<a.length;o++){const s=a[o];window.localStorage.removeItem(`robloxqol-summarycache-${i}+${s}+${86400*c}`)}}}}function IsIdInCache(r,t,a,e){}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/economy/summarycache.js

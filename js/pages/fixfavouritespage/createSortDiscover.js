@@ -1,0 +1,3 @@
+const PreventDuplicateScript_143=0;function CreateSortDiscover(a){const e=document.createElement("div");e.className="game-sort-detail-container";const t=document.createElement("h1");t.innerText=a;const n=document.createElement("div");return n.className="game-grid expand-home-content-disabled",e.append(t,n),[e,n,t]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/fixfavouritespage/createSortDiscover.js

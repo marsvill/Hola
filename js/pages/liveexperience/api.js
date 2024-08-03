@@ -1,0 +1,3 @@
+const PreventDuplicateScript_200=0;async function GetLiveStatsFromCurrentPlace(){const t=await GetUniverseIdFromGamePage(),[s,o]=await RequestFunc("https://games.roblox.com/v1/games?universeIds="+t,"GET");if(!s)return[!1];const e=o.data[0];return[!0,{Playing:e.playing,Visits:e.visits,Favourites:e.favoritedCount}]}async function GetLikesFromCurrentPlace(){const t=await GetUniverseIdFromGamePage(),[s,o]=await RequestFunc("https://games.roblox.com/v1/games/votes?universeIds="+t,"GET");if(!s)return[!1];const e=o.data[0];return[!0,{Likes:e.upVotes,Dislikes:e.downVotes,Ratio:Math.floor(e.upVotes/(e.upVotes+e.downVotes)*100)}]}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/liveexperience/api.js

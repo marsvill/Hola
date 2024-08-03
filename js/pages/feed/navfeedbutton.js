@@ -1,0 +1,3 @@
+const PreventDuplicateScript_142=0;IsFeatureEnabled("Feed").then(async function(t){if(!t)return;const e=document.createElement("li");e.style.display="block",e.innerHTML='<a class="dynamic-overflow-container text-nav" href="https://www.roblox.com/feeds" id="nav-feed" target="_self"><div><span class="icon-nav-my-feed"></span></div><span class="font-header-2 dynamic-ellipsis-item">Feed</span><div class="dynamic-width-item align-right"><span class="notification-blue notification hidden" title="0" count="0">0</span></div></a>';const a=await WaitForId("navigation");(await WaitForClassPath(a,"left-col-list")).insertBefore(e,document.getElementById("nav-blog")?.parentNode)});
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/pages/feed/navfeedbutton.js
