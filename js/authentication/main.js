@@ -1,0 +1,3 @@
+const PreventDuplicateScript_61=0;let CachedAuthKey="",FetchingAuthKey=!1;async function GetAuthKey(){for(;FetchingAuthKey;)await sleep(100);return CachedAuthKey!=""||(FetchingAuthKey=!0,CachedAuthKey=await chrome.runtime.sendMessage({type:"authentication"}),FetchingAuthKey=!1),CachedAuthKey}async function InvalidateAuthKey(){return CachedAuthKey="",await chrome.runtime.sendMessage({type:"forcereauthenticate"})}async function Reauthenticate(){return CachedAuthKey="",await chrome.runtime.sendMessage({type:"reauthenticate"})}
+
+//# sourceMappingURL=https://roqol.io/assets/sourcemap/chrome/2.33.1/js/authentication/main.js
